@@ -1,218 +1,206 @@
 <!DOCTYPE html>
 <html>
-<head>
-
+  <head>
     <title>vlad verba</title>
-    <link rel="icon" type="image/png" href="img/favicon.png"/>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand:300,500" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Quicksand:300,500"
+      rel="stylesheet"
+    />
 
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-* {
-  box-sizing: border-box;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
 
-.masterDiv{
-    float: left;
-    width: 100%;
-    padding: 10px;
-    height: 100%;
-    /* outline: 1px dashed blue; */
-    margin-top: 50px;
-    margin-bottom: 80px;
-    /* background-color: hotpink; */
-}
+      .masterDiv {
+        float: left;
+        width: 100%;
+        padding: 10px;
+        height: 100%;
+        /* outline: 1px dashed blue; */
+        margin-top: 50px;
+        margin-bottom: 80px;
+        /* background-color: hotpink; */
+      }
 
-/* Create two equal columns that floats next to each other */
-.column1 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 500px;
-  /* outline: 1px dashed blue; */
-}
+      /* Create two equal columns that floats next to each other */
+      .column1 {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 500px;
+        /* outline: 1px dashed blue; */
+      }
 
-.column2 {
-  float: left;
-  width: 50%;
-  padding: 10px;
-  height: 500px;
-  /* outline: 1px dashed blue; */
-}
+      .column2 {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        height: 500px;
+        /* outline: 1px dashed blue; */
+      }
 
-
-/* Clear floats after the columns */
-/* .row:after {
+      /* Clear floats after the columns */
+      /* .row:after {
   content: "";
   display: table;
   clear: both;
   } */
 
-.divLeft {
-  /* border: 1px dashed red; */
-  /* background-color: lightblue; */
-  text-align: left;
-  width: 80%;
-  margin-left: 30px;
-  padding: 10px;
-}
+      .divLeft {
+        /* border: 1px dashed red; */
+        /* background-color: lightblue; */
+        text-align: left;
+        width: 80%;
+        margin-left: 30px;
+        padding: 10px;
+      }
 
-.leftSocial{
-    /* border: 1px dashed red; */
-    /* background-color: lightblue; */
-    text-align: left;
-    width: 80%;
-    margin-left: 30px;
-    padding: 10px;
-    
-}
+      .leftSocial {
+        /* border: 1px dashed red; */
+        /* background-color: lightblue; */
+        text-align: left;
+        width: 80%;
+        margin-left: 30px;
+        padding: 10px;
+      }
 
-a {color:#606060;}
+      a {
+        color: #606060;
+      }
 
-.socialDiv{
+      .socialDiv {
+        /* border: 1px dashed blue; */
+        width: 70px;
+        display: inline-block;
+        font-size: 16px;
+        /* padding: 10px; */
+        /* transition: transform .2s; */
+        /* border-radius: 10px; */
+        color: black;
+      }
 
-    /* border: 1px dashed blue; */
-    width: 70px;
-    display: inline-block;
-    font-size: 16px;
-    /* padding: 10px; */
-    /* transition: transform .2s; */
-    /* border-radius: 10px; */
-    color: black;
+      .jobDiv {
+        /* border: 1px dashed blue; */
+        width: 70%;
+        height: 30%;
+        margin-left: 30px;
+        padding: 10px;
+        /* transition: transform .2s; */
+      }
 
-}
+      /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+      @media screen and (max-width: 900px) {
+        .column1 {
+          width: 100%;
+          height: 100%;
+        }
+        .column2 {
+          width: 100%;
+          height: 100%;
+        }
 
-.jobDiv{
+        .jobDiv {
+          height: 23%;
+          width: 90%;
+        }
+      }
 
-    /* border: 1px dashed blue; */
-    width: 70%;
-    height: 30%;
-    margin-left: 30px;
-    padding: 10px;
-    /* transition: transform .2s; */
-    
-}
+      .schoolDiv {
+        /* border: 1px dashed green; */
+        width: 90%;
+        height: 20%;
+        margin-left: 30px;
+        font-size: 18px;
+        padding: 10px;
+        /* transition: transform .2s; */
+      }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 900px) {
-  .column1 {
-    width: 100%;
-    height: 100%;
-  }
-  .column2{
-    width: 100%;
-    height: 100%;
-  }
+      .jobTitle {
+        display: inline-block;
+        /* border: 1px dashed green; */
+        width: 80%;
+        height: 40px;
+        font-size: 18px;
+        margin-left: 5px;
+        margin: auto;
+        text-align: left;
+        vertical-align: top;
+        color: black;
+        /* vertical-align: middle; */
+      }
 
-  .jobDiv{
-    height: 23%;
-    width: 90%;
-  }
-  
-
-}
-
-.schoolDiv{
-
-    /* border: 1px dashed green; */
-    width: 90%;
-    height: 20%;
-    margin-left: 30px;
-    font-size: 18px;
-    padding: 10px;
-    /* transition: transform .2s; */
-}
-
-.jobTitle{
-
-    display: inline-block;
-    /* border: 1px dashed green; */
-    width: 80%;
-    height: 40px;
-    font-size: 18px;
-    margin-left: 5px;
-    margin: auto;
-    text-align: left;
-    vertical-align: top;
-    color: black;
-    /* vertical-align: middle; */
-}
-
-/* .jobDiv:hover {
+      /* .jobDiv:hover {
   transform: scale(1.1); 
 } */
 
-/* .socialDiv:hover {
+      /* .socialDiv:hover {
   transform: scale(1.1); 
 } */
 
-
-/* .socialDiv:hover {
+      /* .socialDiv:hover {
     background: #F8F8F8;
 } */
 
-.jobImage{
+      .jobImage {
+        display: inline-block;
+        /* border: 1px dashed green; */
+        width: 40px;
+        height: 40px;
+      }
 
-    display: inline-block;
-    /* border: 1px dashed green; */
-    width: 40px;
-    height: 40px;
+      .jobDescription {
+        /* border: 1px dashed lightblue; */
+        width: 80%;
+        color: #606060;
+        /* margin-left: 48px; */
+        font-size: 14px;
+        /* padding: 10px; */
+        padding-top: 10px;
+      }
+      body {
+        font-family: "Quicksand";
+        background: #f8f8ff;
+      }
 
-}
+      span1 {
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 40px;
+      }
 
-.jobDescription{
-    /* border: 1px dashed lightblue; */
-    width: 80%;
-    color: #606060;
-    /* margin-left: 48px; */
-    font-size: 14px;
-    /* padding: 10px; */
-    padding-top: 10px;
-}
-body {
-    font-family: 'Quicksand';
-    background: #f8f8ff;
-}
+      span {
+        display: inline-block;
+        vertical-align: middle;
+        /* line-height: 40px; */
+      }
 
-span1 { 
-    display: inline-block;
-    vertical-align: middle;
-    line-height: 40px;
-}
+      img {
+        display: inline-block;
+        border-radius: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40px;
+        height: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="masterDiv">
+      <div class="row">
+        <div class="column1">
+          <div class="divLeft">
+            <p style="font-size: 20px">Hey - I'm Vlad Verba.</p>
+            <p style="font-size: 20px">
+              Based in New York City. Currently Product Manager at Front Office
+              Sports, working on internal tools & consumer facing products. I'm
+              also working on some personal projects. See below.
+            </p>
+          </div>
 
-span { 
-    display: inline-block;
-    vertical-align: middle;
-    /* line-height: 40px; */
-}
-
-img {
-    display: inline-block;
-    border-radius: 20%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 40px;
-    height: 40px;
-}
-
-
-</style>
-</head>
-<body>
-
-<div class="masterDiv">
-<div class="row">
-  <div class="column1">
-
-    <div class="divLeft">
-    <p style="font-size:20px">Hey - I'm Vlad Verba.</p>
-    <p style="font-size:20px">Based in New York City. Currently Product Manager at Front Office Sports, 
-        working on some internal team tools as well as new consumer facing products.
-        I love working on side projects and building products that help people.
-    </p>
-    </div>
-
-    <!-- <div class = "schoolDiv">
+          <!-- <div class = "schoolDiv">
         <img src="columbia.jpg">
         <div class = "jobTitle">
             <span1 style="font-size:18px"> Columbia University </span1>
@@ -224,86 +212,118 @@ img {
 
     </div> -->
 
-    <!-- // 20
+          <!-- // 20
     // 14
     // 16
     // 18 -->
-    
 
-    <br>
+          <br />
 
-    <div class = "leftSocial">
+          <div class="leftSocial">
+            <!-- <div class="socialDiv">
+              <center>
+                <a
+                  href="https://read.cv/vladverba"
+                  style="text-decoration: none"
+                >
+                  Resume
+                </a>
+              </center>
+            </div> -->
 
-        <div class="socialDiv">
-            <center> <a href="https://read.cv/vladverba" style="text-decoration: none"> Resume </a></center>
+            <div class="socialDiv">
+              <center>
+                <a
+                  href="https://github.com/vladverba"
+                  style="text-decoration: none"
+                  target="_blank"
+                >
+                  GitHub
+                </a>
+              </center>
+            </div>
+
+            <!-- <div class="socialDiv">
+              <center>
+                <a
+                  href="mailto:vladverba.vv@gmail.com"
+                  style="text-decoration: none"
+                >
+                  Email
+                </a>
+              </center>
+            </div> -->
+          </div>
         </div>
+        <div class="column2">
+          <a
+            href="https://frontofficesports.com/"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <div class="jobDiv">
+              <img src="img/fos.jpeg" />
+              <div class="jobTitle">
+                <span1> Front Office Sports </span1>
+              </div>
 
-        <div class="socialDiv">
-            <center> <a href="https://github.com/vladverba" style="text-decoration: none"> GitHub </a></center>
+              <div class="jobDescription">
+                <span>
+                  Product Manager currently focused on building internal tools.
+                  Also working on some data-backed consumer facing products.
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <br />
+
+          <a
+            href="https://airtime.com/"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <div class="jobDiv">
+              <img src="img/airtime.jpg" />
+
+              <div class="jobTitle">
+                <span1> Airtime </span1>
+              </div>
+
+              <div class="jobDescription">
+                <span>
+                  Growth and Data Analyst focused on developing strategy and
+                  acquiring customers through data mining, location targeting
+                  and more.
+                </span>
+              </div>
+            </div>
+          </a>
+
+          <br />
+          <a
+            href="https://socialreach.ly/"
+            style="text-decoration: none"
+            target="_blank"
+          >
+            <div class="jobDiv">
+              <img src="img/social.jpg" />
+
+              <div class="jobTitle">
+                <span1> SocialReachly </span1>
+              </div>
+
+              <div class="jobDescription">
+                <span>
+                  Marketing Strategist focused on influencer and paid ads. Head
+                  of customer aquisition for verified Instagram celebrities and
+                  companies.
+                </span>
+              </div>
+            </div>
+          </a>
         </div>
-
-        <div class="socialDiv">
-            <center> <a href="mailto:vlad@leadeasyco.com" style="text-decoration: none"> Email </a></center>
-        </div>
-
+      </div>
     </div>
-
-  </div>
-  <div class="column2">
-
-    <a href = "https://frontofficesports.com/" style="text-decoration: none">
-    <div class = "jobDiv">
-        <img src="img/fos.jpeg">
-        <div class = "jobTitle">
-            <span1> Front Office Sports </span1>
-        </div>
-
-        <div class = "jobDescription">
-            <span> Product Manager currently focused on building internal tools. Also working on some data-backed consumer facing products.    
-            </span>
-        </div>
-
-    </div>
-    </a>
-
-    <br>
-
-    <a href = "https://airtime.com/" style="text-decoration: none">
-    <div class = "jobDiv">
-        <img src="img/airtime.jpg">
-
-        <div class = "jobTitle">
-            <span1> Airtime </span1>
-        </div>
-
-        <div class = "jobDescription">
-            <span> Growth and Data Analyst focused on developing strategy and acquiring customers through 
-                data mining, location targeting and more.
-            </span>
-        </div>
-    </div>
-</a>
-
-    <br>
-    <a href = "https://socialreach.ly/" style="text-decoration: none">
-    <div class = "jobDiv">
-        <img src="img/social.jpg">
-
-        <div class = "jobTitle">
-            <span1> SocialReachly </span1>
-        </div>
-
-        <div class = "jobDescription">
-            <span> Marketing Strategist focused on influencer and paid ads. Head of customer aquisition for verified Instagram 
-                celebrities and companies.  </span>
-        </div>
-
-    </div>
-</a>
-
-  </div>
-</div>
-</div>
-
-</body>
+  </body>
 </html>
